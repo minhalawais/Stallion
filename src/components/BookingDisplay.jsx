@@ -13,7 +13,7 @@ const BookingsDisplay = () => {
     try {
       const token = localStorage.getItem('token');
       // Updated to use the new route for current bookings
-      const response = await fetch('http://stallionsls.com/api/api/bookings/current', {
+      const response = await fetch('https://stallionsls.com/api/api/bookings/current', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -40,7 +40,7 @@ const BookingsDisplay = () => {
     try {
       const token = localStorage.getItem('token');
       // Updated to match the new route structure
-      const response = await fetch(`http://stallionsls.com/api/api/bookings/${bookingId}`, {
+      const response = await fetch(`https://stallionsls.com/api/api/bookings/${bookingId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ const BookingsDisplay = () => {
   const handleCancelBooking = async (bookingId) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://stallionsls.com/api/api/bookings/${bookingId}/cancel`, {
+      const response = await fetch(`https://stallionsls.com/api/api/bookings/${bookingId}/cancel`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`

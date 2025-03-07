@@ -29,7 +29,7 @@ const ProfilePage = () => {
   const fetchUserData = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://stallionsls.com/api/user/profile', {
+      const response = await fetch('https://stallionsls.com/api/user/profile', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Accept': 'application/json'
@@ -53,7 +53,7 @@ const ProfilePage = () => {
   const fetchBookingHistory = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://stallionsls.com/api/api/bookings/all', {
+      const response = await fetch('https://stallionsls.com/api/api/bookings/all', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Accept': 'application/json'
@@ -74,7 +74,7 @@ const ProfilePage = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://stallionsls.com/api/user/profile', {
+      const response = await fetch('https://stallionsls.com/api/user/profile', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

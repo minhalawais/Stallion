@@ -158,7 +158,7 @@ const BookingPage = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://stallionsls.com/api/api/bookings', {
+      const response = await fetch('https://stallionsls.com/api/api/bookings', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

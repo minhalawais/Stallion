@@ -32,7 +32,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post("http://stallionsls.com/api/auth/signup", {
+      const response = await axios.post("https://stallionsls.com/api/auth/signup", {
         firstname,
         lastname,
         email,
